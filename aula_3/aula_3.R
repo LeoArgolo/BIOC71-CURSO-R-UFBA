@@ -4,14 +4,16 @@
 # Universidade Federal da Bahia                   ####
 # https://github.com/vrios/Intro-Linguagem-R/wiki#####
 ######################################################
+#mudanca3
 #                    (Aula 3)                     #### 
 # Disciplina - Introducao ao R                    ####
 # Discente: Leandro Araujo Argolo                 ####
 #                                                 ####
 ######################################################
+
 #diferencie a funcao source da funcao load()
-#A funcao source() é utilizada para executar todo o conteudo de um arquivo de codigo. Especialmente util para carregar funcoes especificas ou scripts de analise.
-#a funcao load(), por sua vez, é utilizada para carregar arquivos criados com as funcoes save() e save.image().
+#A funcao source() ? utilizada para executar todo o conteudo de um arquivo de codigo. Especialmente util para carregar funcoes especificas ou scripts de analise.
+#a funcao load(), por sua vez, ? utilizada para carregar arquivos criados com as funcoes save() e save.image().
 
 #baixe para seu diretorio de trabalho o arquivo toroidal.distance.R, disponivel
 #em https://raw.githubusercontent.com/vrios/Intro-Linguagem-R/master/arquivos/toroidal.distance.R, e o arquivo distancias.csv, disponivel em https://raw.githubusercontent.com/vrios/Intro-Linguagem-R/master/arquivos/distancias.csv
@@ -57,7 +59,7 @@ str(DnD)
 
 # Ha algum NA? houve algum problema com o cabecalho? 
 
-#Sim. Alem do NA da observacao faltante, tambem existem NA's na primeira coluna que especifica dados de coleta e deve ser removida para as análises dos dados. Desconsiderando a primeira coluna, o cabecalho foi lido corretamente mas possui caracteres (parenteses e til) que causarão problemas em análises posteriores. 
+#Sim. Alem do NA da observacao faltante, tambem existem NA's na primeira coluna que especifica dados de coleta e deve ser removida para as an?lises dos dados. Desconsiderando a primeira coluna, o cabecalho foi lido corretamente mas possui caracteres (parenteses e til) que causar?o problemas em an?lises posteriores. 
 
 colnames(DnD) = c("peso em centenas de kg", "dragao identidade", "vacas", "fazendeiros", "virgens", "aventureiros") # para substituir os caracteres problematicos do cabecalho
 
