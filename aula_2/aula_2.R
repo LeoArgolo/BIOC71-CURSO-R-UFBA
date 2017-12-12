@@ -25,7 +25,7 @@ is.data.frame(aves.c) #Pergunta se o objeto especificado ? um Dataframe. Retorna
 #o que a fun??o summary() faz?
 #Exibe resultados de v?rias estat?sticas sum?rias para o objeto especificado
 
-
+#mudanca2.2
 #Tr?s ?reas foram submetidas aplica??o de tr?s adubos diferentes, e uma foi
 #mantida como controle. A biomassa seca (kg) por parcela foi medida para
 #verificar se houve efeito do adubo. Os dados obtidos foram:
