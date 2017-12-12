@@ -334,7 +334,7 @@ plot(exercicio3$x1,exercicio3$y1
 #abline(dados,lwd=2.5, col="green") #apesar de plotar, a linha de modelo linear nao se parece com a do grafico que temos que reproduzir 
 segments(x0=0.5, y0=2.2, x1=2.2, y1=1, lwd=2.5)
 text(2.5,3,"a",cex=1.5)
-
+#mudanca4.2
 #Grafico b
 par(mgp=c(0.9,0.7,0))
 boxplot(x2~y2, data=exercicio3
