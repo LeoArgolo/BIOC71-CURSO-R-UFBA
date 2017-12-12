@@ -40,10 +40,13 @@
 
 ##### Alterando o Repositório e restuarando versões anteriores #####
 
-# No GitHub, na página inicial do repositório, crie um novo arquivo chamado aula_0.R . Nele, salve o script das atividades preliminares do curso (você fez as atvidades preliminares, certo? *certo?*?). Salve o arquivo no GitHub com uma commit message descritiva
+# No GitHub, na página inicial do repositório, crie um novo arquivo chamado aula_0.R . Nele, salve o script das atividades preliminares do curso (você fez as atvidades preliminares, certo? *certo?*). Salve o arquivo no GitHub com uma commit message descritiva
 
 # verifique o status do seu repositório local, e sincronize seu local com o remote
 
+
 # Faça alterações em arquivos do repositório local, seguidas vezes, em locais diferentes dos arquivos, sempre dando commit e push. Como reverter para um estado anterior? Como acessar o histórico do arquivo no Github? Restaure somente um dos arquivos para um estado anterior
+
+
 
 #Extra: clone o repositório deste curso, sugira uma modificação em um dos arquivos de qualquer aula, de preferência uma melhoria de clareza do exercício ou da aula, e faça um pull request. Se eu fizer o merge vc ganha um chocolate
