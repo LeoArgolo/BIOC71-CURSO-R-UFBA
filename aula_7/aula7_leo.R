@@ -45,7 +45,11 @@
 # verifique o status do seu repositório local, e sincronize seu local com o remote
 
 
+
 # Faça alterações em arquivos do repositório local, seguidas vezes, em locais diferentes dos arquivos, sempre dando commit e push. Como reverter para um estado anterior? Como acessar o histórico do arquivo no Github? Restaure somente um dos arquivos para um estado anterior
+
+#Uma das formas de reverter um arquivo para um estado anterior é acessar a história do Github clicando no arquivo, na aba "history" e no simbolo "<>, que irá exibir o repositorio no momento da versao escolhida do arquivo. A partir deste ponto, basta acessar o arquivo, copiar a parte desejada, colar e salvar no R, realizar o commit e push.
+
 
 
 
