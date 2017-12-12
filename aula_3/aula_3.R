@@ -24,7 +24,7 @@
 #utilizar a funcao source(). Apos carregar o codigo, as funcoes estarao disponiveis para uso no R.
 
 # Faca o procedimento que voce descreveu acima
-
+#mudanca3.2
 source("toroidal.distance.R")
 toroidal.distance()
 toroidal.distances()
