@@ -3,19 +3,20 @@
                                       ###   Disciplina - Introducao ao R      ###
                                       ###   Discente: Leandro Araujo Argolo   ###
                                       ###########################################
-
+#mudanca4
+                                      
 riqueza <- c(15,18,22,24,25,30,31,34,37,39,41,45)
 area <- c(2,4.5,6,10,30,34,50,56,60,77.5,80,85)
 area.cate <- rep(c("pequeno", "grande"), each=6)
 
 plot(riqueza~area) #Exibe um grafico de dispersao de acordo com os objetos criados (riqueza e area) 
 plot(area,riqueza) # Exibe o mesmo grafico que o comando acima
-boxplot(riqueza~area.cate) # Exibe um boxplot dos dados. Este tipo de grafico é utilizado quando as variáveis são categóricas
+boxplot(riqueza~area.cate) # Exibe um boxplot dos dados. Este tipo de grafico ? utilizado quando as vari?veis s?o categ?ricas
 barplot(riqueza) # Exibe um grafico de barras dos dados. 
 
-#### Exercício 1 - Fazendo os Primeiros Gráficos ####
-## Construa "plot", boxplot e barplot usando as variáveis do conjunto de dados Conjunto de Dados: Dados de Biomassa de Árvores de 
-## Eucalyptus Saligna, para explorar relações entre:
+#### Exerc?cio 1 - Fazendo os Primeiros Gr?ficos ####
+## Construa "plot", boxplot e barplot usando as vari?veis do conjunto de dados Conjunto de Dados: Dados de Biomassa de ?rvores de 
+## Eucalyptus Saligna, para explorar rela??es entre:
 ##  
 ## dap e ht  
 ## ht e tronco
@@ -23,7 +24,7 @@ barplot(riqueza) # Exibe um grafico de barras dos dados.
 ## dap e talhao
 ## dap
 ## ht
-## Note: barplot só aceita uma variável
+## Note: barplot s? aceita uma vari?vel
 
 
 eucalipto <- read.csv("esaligna.csv", head=T, sep=",", dec=".")
@@ -53,12 +54,12 @@ plot(riqueza~area, las=3)
 par(cex=2)
 plot(riqueza~area, cex=2) 
 
-#####Exercício 2 - Aprendendo a Editar Gráficos####
+#####Exerc?cio 2 - Aprendendo a Editar Gr?ficos####
 ##Entre no R e digite:
   
 ?plot #exibe a ajuda da funcao plot
 
-##Agora, usando as variáveis:
+##Agora, usando as vari?veis:
   
 riqueza <- c(15,18,22,24,25,30,31,34,37,39,41,45)
 area <- c(2,4.5,6,10,30,34,50,56,60,77.5,80,85)
@@ -69,36 +70,36 @@ area <- c(2,4.5,6,10,30,34,50,56,60,77.5,80,85)
 
 plot(riqueza~area, xlab = "Tamanho da Ilha (ha)")
 
-## O nome do eixo y para "Riqueza de Espécies"
+## O nome do eixo y para "Riqueza de Esp?cies"
 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies")
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies")
 
-## O título do gráfico para "Aves das Ilhas Samoa"
+## O t?tulo do gr?fico para "Aves das Ilhas Samoa"
 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies", main = "Aves das Ilhas Samoa")
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies", main = "Aves das Ilhas Samoa")
 
 ##Agora entre no:
   
 ?par #exibe a ajuda da funcao par
 
-## Usando o mesmo gráfico anterior, mude:
+## Usando o mesmo gr?fico anterior, mude:
 
 ## O tipo de ponto (numero de 0 a 25)
 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies", main = "Aves das Ilhas Samoa", cex = 1.2)
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies", main = "Aves das Ilhas Samoa", cex = 1.2)
      
 ## O tamanho dos pontos e legendas
 
 par(cex = 1) 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies", main = "Aves das Ilhas Samoa", cex = 1.2)
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies", main = "Aves das Ilhas Samoa", cex = 1.2)
 
-## A direção da escala do gráfico (para ficar tudo na horizontal)
+## A dire??o da escala do gr?fico (para ficar tudo na horizontal)
 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies", main = "Aves das Ilhas Samoa", las = 3)
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies", main = "Aves das Ilhas Samoa", las = 3)
 
 ## O tipo de fonte das legendas (para ficar tudo como em Times New Roman - dica= "serif")
 
-plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Espécies", main = "Aves das Ilhas Samoa", family = "serif")
+plot(riqueza~area, xlab = "Tamanho da Ilha (ha)", ylab = "Riqueza de Esp?cies", main = "Aves das Ilhas Samoa", family = "serif")
 
 par()
 
@@ -131,8 +132,8 @@ plot(riqueza~area)
 par(mar=c(14,2,4,0.5))
 boxplot(riqueza~area.cate)
 
-####Exercício 3 - Mudando diferentes gráficos####
-## Com as variáveis:
+####Exerc?cio 3 - Mudando diferentes gr?ficos####
+## Com as vari?veis:
 
 riqueza <- c(15,18,22,24,25,30,31,34,37,39,41,45)
 area <- c(2,4.5,6,10,30,34,50,56,60,77.5,80,85)
@@ -146,7 +147,7 @@ plot(riqueza~area)
 
 plot(riqueza~area, bty="l", tcl=0.3)
 
-#Perecebeu o que mudou? # As linhas superior e direita foram removidas e os traços de cada valor foram movidos para o interior do grafico
+#Perecebeu o que mudou? # As linhas superior e direita foram removidas e os tra?os de cada valor foram movidos para o interior do grafico
 
 #Agora tente:
 
@@ -167,7 +168,7 @@ boxplot(riqueza~area.cate) #mesmas mudancas da remocao das linhas e direcao dos 
 ?lines
 
 
-####Exercício 4####
+####Exerc?cio 4####
 
 #Usando as variaveis:
 
@@ -175,13 +176,13 @@ riqueza <- c(15,18,22,24,25,30,31,34,37,39,41,45)
 area <- c(2,4.5,6,10,30,34,50,56,60,77.5,80,85)
 abundancia <- rev(riqueza)
 
-#Crie graficos inserindo os parâmetros abaixo.
-#lines() Para inserir linhas retas ou curvas nao-paramétricas (como lowess, loess, gam, etc)
+#Crie graficos inserindo os par?metros abaixo.
+#lines() Para inserir linhas retas ou curvas nao-param?tricas (como lowess, loess, gam, etc)
 
 plot(riqueza~area)
 lines(lowess(area, riqueza))
 
-#abline() Para inserir linhas de tendencia criadas a partir de um modelo linear. Para isso é primeiro necessario criar o modelo, para depois criar a linha
+#abline() Para inserir linhas de tendencia criadas a partir de um modelo linear. Para isso ? primeiro necessario criar o modelo, para depois criar a linha
 
 model <-  lm(riqueza~area)
 plot(riqueza~area)
@@ -198,7 +199,7 @@ plot(riqueza~area)
 abline(v=mean(area))
 abline(h=mean(riqueza))
 
-#text() Para inserir texto dentro do grafico. O texto pode ser uma letra, um simbolo (muito usado para mostrar diferenciar classes no gráfico), uma palavra ou ate mesmo uma frase
+#text() Para inserir texto dentro do grafico. O texto pode ser uma letra, um simbolo (muito usado para mostrar diferenciar classes no gr?fico), uma palavra ou ate mesmo uma frase
 
 plot(riqueza~area)
 text(20,40,"texto")
@@ -208,7 +209,7 @@ text(20,40,"texto")
 plot(riqueza~area)
 mtext("legenda no lado errado", side=4, line=0.9, at=20,cex=2, family="serif")
 
-#par(new=TRUE) sobrepõe um grafico ja existente 
+#par(new=TRUE) sobrep?e um grafico ja existente 
 
 plot(riqueza~area)
 par(new=TRUE)
@@ -221,7 +222,7 @@ par(new=TRUE)
 plot(abundancia~area, axes=FALSE, ann=FALSE, pch=16)
 axis(4)
 
-#Aqui no caso será necessário usar axes=F para suprimir a criação dos eixos do gráfico inicial de abundância e ann=F para suprimir a legenda de abundância do lado direito. Para para diferenciar os pontos entre os dois plots usar pch=16, ou qualquer outro número. Para inserir a legenda de abundância do lado direito será necessário usar mtext(), mas daí será necessário mudar outros parâmetros como distância da margem.
+#Aqui no caso ser? necess?rio usar axes=F para suprimir a cria??o dos eixos do gr?fico inicial de abund?ncia e ann=F para suprimir a legenda de abund?ncia do lado direito. Para para diferenciar os pontos entre os dois plots usar pch=16, ou qualquer outro n?mero. Para inserir a legenda de abund?ncia do lado direito ser? necess?rio usar mtext(), mas da? ser? necess?rio mudar outros par?metros como dist?ncia da margem.
 
 #arrows(), rect(), polygon()
 
@@ -241,7 +242,7 @@ boxplot(riqueza~area.cate)
 
 dev.off()
 
-#png("meugrafico%02d.png") grava uma sequencia de graficos com ate 2 digitos, ou seja, até 99 graficos.
+#png("meugrafico%02d.png") grava uma sequencia de graficos com ate 2 digitos, ou seja, at? 99 graficos.
 
 
                                           
@@ -252,37 +253,37 @@ dev.off()
 
 
 
-#Exercícios 5 - Criação de Gráficos
+#Exerc?cios 5 - Cria??o de Gr?ficos
 
-#Usando o conjunto de dados Conjunto de Dados: Dados de Biomassa de Árvores de Eucalyptus Saligna, construa os seguintes gráficos:
+#Usando o conjunto de dados Conjunto de Dados: Dados de Biomassa de ?rvores de Eucalyptus Saligna, construa os seguintes gr?ficos:
 
 eucalipto  = read.table("esaligna.csv", header=T, sep=",", dec=".")
 
-####5.1 Editando alguns parâmetros gráficos####
+####5.1 Editando alguns par?metros gr?ficos####
 
-#Crie um gráfico de dispersão entre "dap"1) e "ht"2) com:
+#Crie um gr?fico de dispers?o entre "dap"1) e "ht"2) com:
 
 plot(eucalipto$dap~eucalipto$ht)
 
-#Legendas dos eixos com nomes das variáveis e suas unidades
-#Marcações do eixos (ticks) para dentro da área do gráfico
+#Legendas dos eixos com nomes das vari?veis e suas unidades
+#Marca??es do eixos (ticks) para dentro da ?rea do gr?fico
 #Apenas dois eixos (formato "L")
-#Título informativo
-#Tamanho das fontes maiores que o padrão
+#T?tulo informativo
+#Tamanho das fontes maiores que o padr?o
 
 
-plot(eucalipto$dap~eucalipto$ht, xlab="Altura (m)", ylab="Diâmetro à altura do peito (cm)", cex.lab=1.3, tcl=0.3, bty="l", cex.axis=1.3, main="Relação entre DAP e altura", cex.main=1.3)
+plot(eucalipto$dap~eucalipto$ht, xlab="Altura (m)", ylab="Di?metro ? altura do peito (cm)", cex.lab=1.3, tcl=0.3, bty="l", cex.axis=1.3, main="Rela??o entre DAP e altura", cex.main=1.3)
 
 
-####5.2 Dois gráficos juntos####
+####5.2 Dois gr?ficos juntos####
 
-#Use as variáveis "dap" e "talhao" para construir dois gráficos, colocando-os lado a lado. O primeiro deve ser um gráfico de desenho de caixa (boxplot) da variável "dap" em função do fator "talhão". O segundo deve ter apenas a média e uma barra de desvio-padrão do dap, para cada talhão.
+#Use as vari?veis "dap" e "talhao" para construir dois gr?ficos, colocando-os lado a lado. O primeiro deve ser um gr?fico de desenho de caixa (boxplot) da vari?vel "dap" em fun??o do fator "talh?o". O segundo deve ter apenas a m?dia e uma barra de desvio-padr?o do dap, para cada talh?o.
 
-#Insira também uma letra para dizer qual é o gráfico "a" e qual é o "b" (tanto faz, quem é um e quem é outro).
+#Insira tamb?m uma letra para dizer qual ? o gr?fico "a" e qual ? o "b" (tanto faz, quem ? um e quem ? outro).
 
-#Dica: vocês terão que calcular a média e os desvios-padrão do dap das árvores em cada talhão. Depois crie uma matriz com estes valores e crie o plot destes valores.
+#Dica: voc?s ter?o que calcular a m?dia e os desvios-padr?o do dap das ?rvores em cada talh?o. Depois crie uma matriz com estes valores e crie o plot destes valores.
 
-boxplot(eucalipto$dap~eucalipto$talhao) #boxplot de dap em função de talhao
+boxplot(eucalipto$dap~eucalipto$talhao) #boxplot de dap em fun??o de talhao
 
 eucalipto$talhao=as.factor(eucalipto$talhao)
 
@@ -294,7 +295,7 @@ desvio.ldap = aggregate(x=eucalipto$dap,by = list(eucalipto$talhao), FUN = sd, n
 
 # Grafico a
 par(mfrow = c(1,2))
-boxplot(eucalipto$dap~eucalipto$talhao, ylab="DAP", xlab="Talhão")
+boxplot(eucalipto$dap~eucalipto$talhao, ylab="DAP", xlab="Talh?o")
 mtext("a")
 
 # Grafico b
@@ -302,18 +303,18 @@ mtext("a")
 (y1=media.ldap$x+desvio.ldap$x)
 (limite=range(max(y1),min(y0)))
 
-plot(media.ldap$x, ylab="DAP (média)", xlab="Talhão",  ylim = limite)
+plot(media.ldap$x, ylab="DAP (m?dia)", xlab="Talh?o",  ylim = limite)
 arrows(x0=1:6, y0=media.ldap$x-desvio.ldap$x, x1=1:6, y1=media.ldap$x+desvio.ldap$x, length = 0.05, angle = 90, code = 3)
 mtext("b")
 
 
 
-#####5.3 Adivinhando o código####
-#Leia os dados deste arquivo e usando as variáveis "x1" e "y1" e "x2" e "y2" tente reproduzir esta figura:
+#####5.3 Adivinhando o c?digo####
+#Leia os dados deste arquivo e usando as vari?veis "x1" e "y1" e "x2" e "y2" tente reproduzir esta figura:
 
 exercicio3 = read.csv("exercicio3.csv", header=T, sep=",", dec=".")
 
-par(mfrow=c(1,2)) # determina o numero de graficos possíveis no espaco do dispositivo
+par(mfrow=c(1,2)) # determina o numero de graficos poss?veis no espaco do dispositivo
 par(bty="l", tcl=0.2, family="serif") # remove as linhas superior e direita e indica a fonte
 par(mar=c(4,4,2,2)) #ajusta o tamanho das margens
 dados = lm(y1~x1,data=exercicio3) #salva dentro do objeto "dados", um modelo linear que contem as informacoes para plotar a linha no primeiro grafico
