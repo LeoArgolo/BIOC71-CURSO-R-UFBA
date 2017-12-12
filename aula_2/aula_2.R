@@ -4,29 +4,29 @@
 # Universidade Federal da Bahia
 # https://github.com/vrios/Intro-Linguagem-R/wiki
 #####################################################
-
-#quando possível, sua resposta deve ser um cÃ³digo do 
+#mudanca2
+#quando poss?vel, sua resposta deve ser um cÃ³digo do 
 
 #####Trabalhando com dados#####
 # o que Ã© um dataframe? Qual a diferenÃ§a entre um dataframe e um list? 
-# Lista é conjunto de objetos independente do tipo, dataframe é uma tabela com colunas do mesmo tipo.
+# Lista ? conjunto de objetos independente do tipo, dataframe ? uma tabela com colunas do mesmo tipo.
 # o que as funÃ§Ãµes abaixo fazem? O que elas retornam?
-is.vector(aves.c) # Pergunta se o objeto especificado é um vetor. Retorna FALSE (caso o objeto seja um vetor) ou TRUE, caso o objeto seja um vetor.
-is.numeric(aves.c) # Pergunta se o objeto especificado é um número. Retorna TRUE ou FALSE.
-is.character(aves.c) # Pergunta se o objeto especificado é um caractere. Retorna TRUE ou FALSE.
-is.matrix(peso) # Pergunta se o objeto especificado é uma matriz. Retorna TRUE ou FALSE.
-is.na(aves.c) # Pergunta se os valores que estão no objeto são NA. Retorna TRUE ou FALSE.
-is.data.frame(aves.c) #Pergunta se o objeto especificado é um Dataframe. Retorna TRUE ou FALSE.
+is.vector(aves.c) # Pergunta se o objeto especificado ? um vetor. Retorna FALSE (caso o objeto seja um vetor) ou TRUE, caso o objeto seja um vetor.
+is.numeric(aves.c) # Pergunta se o objeto especificado ? um n?mero. Retorna TRUE ou FALSE.
+is.character(aves.c) # Pergunta se o objeto especificado ? um caractere. Retorna TRUE ou FALSE.
+is.matrix(peso) # Pergunta se o objeto especificado ? uma matriz. Retorna TRUE ou FALSE.
+is.na(aves.c) # Pergunta se os valores que est?o no objeto s?o NA. Retorna TRUE ou FALSE.
+is.data.frame(aves.c) #Pergunta se o objeto especificado ? um Dataframe. Retorna TRUE ou FALSE.
 
 
 #O que queremos dizer quando dizemos uma funÃ§Ã£o "retorna" alguma coisa?
 # Que ela exibe um resultado do comando executado 
 
-#o que a função summary() faz?
-#Exibe resultados de várias estatísticas sumárias para o objeto especificado
+#o que a fun??o summary() faz?
+#Exibe resultados de v?rias estat?sticas sum?rias para o objeto especificado
 
 
-#Três áreas foram submetidas aplicação de três adubos diferentes, e uma foi
+#Tr?s ?reas foram submetidas aplica??o de tr?s adubos diferentes, e uma foi
 #mantida como controle. A biomassa seca (kg) por parcela foi medida para
 #verificar se houve efeito do adubo. Os dados obtidos foram:
 
@@ -51,7 +51,7 @@ media.d = mean(adubo$biomassa[adubo$tratamentos == "D"])
 #que problemas vocÃª teve ao fazer o exercÃ­cio acima?
 
 # O que a funÃ§Ã£o unique() faz?
-# Exibe uma lista apenas com os objetos únicos, removendo elementos ou colunas duplicados
+# Exibe uma lista apenas com os objetos ?nicos, removendo elementos ou colunas duplicados
 
 #Usando o conjunto de dados caixeta.csv, disponivel em
 #http://ecologia.ib.usp.br/bie5782/doku.php?id=dados:dados-caixeta, calcule
@@ -66,7 +66,7 @@ str(caixeta) #o que este comando faz?
 summary(caixeta)
 
 #podemos criar uma coluna a mais no nosso dataframe apenas dizendo ao R o que
-#colocar lá. Por exemplo, criamos uma coluna com o nome do coletor do dado
+#colocar l?. Por exemplo, criamos uma coluna com o nome do coletor do dado
 caixeta$coletor = "Darwin" #regra da reciclagem
 str(caixeta)
 caixeta
@@ -100,7 +100,7 @@ summary(grandes) #1
 
 tamanhos = list(pequenas$h, medias$h, grandes$h) # O que eu tinha feito
 
-tamanhos = c(length(pequenas$local), length(medias$local), length(grandes$local)) #A resolução na aula
+tamanhos = c(length(pequenas$local), length(medias$local), length(grandes$local)) #A resolu??o na aula
 
 #Crie um objeto chamado obj somente com os individuos de "Alchornea
 #triplinervia" Em quantas localidades esta espÃ©cie ocorre? Qual comando para
@@ -116,13 +116,13 @@ sort(unique(caixeta.sem.tabebuia$especie))
 #agora crie um objeto removendo todas as "Tabebuia cassinoides" do local retiro
 #(somente do local retiro)
 
-caixeta.tabebuia.retiro=caixeta[!(caixeta$especie == "Tabebuia cassinoides" & caixeta$local == "retiro"),] #Exclamação significa "não". Tudo que for TRUE para essas condições não vai ser mantido no objeto.
+caixeta.tabebuia.retiro=caixeta[!(caixeta$especie == "Tabebuia cassinoides" & caixeta$local == "retiro"),] #Exclama??o significa "n?o". Tudo que for TRUE para essas condi??es n?o vai ser mantido no objeto.
 unique(caixeta$especie)
 
 
 #crie os objetos abaixo, junte eles num dataframe de duas colunas chamado comNA,
 #depois crie um novo objeto chamado semNA, removendo todas as linhas que
-#contenham NA, usando a notaÃ§Ã£o acima (dica: só se usa "" para valores do tipo
+#contenham NA, usando a notaÃ§Ã£o acima (dica: s? se usa "" para valores do tipo
 #character)
 id = 1:80
 a = c(121.72355, 103.79754, 130.15442, 98.29305, 103.43365, 102.44998,
@@ -147,12 +147,12 @@ d = c(191.3721, 216.1671, 165.4380, 196.2730, 172.6565, 178.2955,
 
 semNA = comNA[!is.na(comNA$y),]
 
-#Abaixo temos dados de tamanho de mandíbula de chacal dourado. Crie um dataframe
+#Abaixo temos dados de tamanho de mand?bula de chacal dourado. Crie um dataframe
 #com esses dados. Qual a mÃ©dia por sexo? E para a espÃ©cie? Guarde estes valores
 #em tres objetos diferentes.
 #machos: 120 107 110 116 114 111 113 117 114 112
-#femeas: 110 111 107 108 110 105 107 106 111 111 Quantos machos tÃªm a mandíbula
-#maior do que a média das fêmeas?
+#femeas: 110 111 107 108 110 105 107 106 111 111 Quantos machos tÃªm a mand?bula
+#maior do que a m?dia das f?meas?
 
 machos = c(120, 107, 110, 116, 114, 111, 113, 117, 114, 112)
 femeas = c(110, 111, 107, 108, 110, 105, 107, 106, 111, 111)
@@ -165,9 +165,9 @@ machos.grandes
 machos.grandes2 = chacais$machos[chacais$machos > media.f] #mesma media agora com dataframe
 
 
-#escreva **uma** linha de código que testa se um número é par, e caso seja,
-#manda uma mensagem dizendo "par". dica: use a função %% (resto da divisão, ou
-#remainder em inglês) e a função message()
+#escreva **uma** linha de c?digo que testa se um n?mero ? par, e caso seja,
+#manda uma mensagem dizendo "par". dica: use a fun??o %% (resto da divis?o, ou
+#remainder em ingl?s) e a fun??o message()
 
 if(10 %% 2 == 0){message("par")}else{message("impar")}
 
@@ -184,7 +184,7 @@ if(teste.de.normalidade$p.value >= 0.5){
 
 
 #agora crie um cÃ³digo  como acima, mas que diga "par" se for par e "impar" se
-#for impar. Dica: leia sobre as funções else e ifelse
+#for impar. Dica: leia sobre as fun??es else e ifelse
 
 
 
