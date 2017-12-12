@@ -21,7 +21,7 @@
 # use pontos como separador de decimal. O que acontece se voc? usar virgula? 
 # Por n?o reconhecer v?rgula como separador de decimais, resulta na mensagem "Error: unexpected ',' in "34 - 72,""
 
-
+#mudanca1.2
 78 / 3 #Divide 78 por 3. Resulta em 26
 2 ^ 3 #Eleva 2 ao cubo. Resulta em 8
 3 * 2 #Multiplica 3 por 2. Resulta em 6
